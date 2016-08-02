@@ -1,0 +1,163 @@
+body,html{
+    width: 100%;
+    height: 100%;
+
+}
+header{
+    height: 55px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    z-index: 9999;
+}
+header .back {
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    left:0;
+}
+header .head{
+    width: 1250px;
+    height: 55px;
+    margin: 0 auto;
+    position: relative;
+}
+header .logo{
+    float: left;
+    left: 50px;
+}
+header .logo h1{
+    text-indent: -899em;
+    width: 208px;
+    height: 40px;
+    background: url(../images/logo1.png) no-repeat;
+    float:left;
+    margin-top: 15px;
+}
+/*header .logo span {
+     font:500 20px "微软雅黑";
+     margin-left: 30px;
+     line-height: 70px;
+     color: white;
+}*/
+header nav{
+    float: left;
+    line-height: 70px;
+    margin-left: 50px;
+}
+header nav li {
+    float: left;
+    padding-right: 50px;
+}
+header nav li a {
+    color :white;
+    font-size: 14px;
+    font-weight: 700;
+}
+header nav li.cur a{
+    color : #F74141;
+}
+header nav li a:hover{
+    color : #F74141;
+    padding-bottom: 9px;
+    border-bottom: 2px solid red;
+}
+header .head .user{
+    float: right;;
+    color: white;
+    font : 700 14px '微软雅黑';
+    line-height: 65px;
+}
+header .head .user .name {
+    color: orange;
+    font-size: 16px;
+    /*margin: 0 10px;*/
+    font-weight:700;
+    margin-left:5px;
+}
+header .head .user .titlePic{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    position: relative;
+    top:20px
+    background: #000;
+}
+header .head .user .titlePic img{
+    width:100%;
+    height:100%;
+}
+header .head .user a {
+    font-size: 12px;
+    color: white;
+    font-weight:500;
+    margin-left:5px;
+}
+.content-2 {
+    width:100%;
+    overflow: hidden;
+}
+.content-2 img{
+    width:100%;
+}
+.content-2 .setuser {
+    position: absolute;
+    top:200px;
+    left:40%;
+}
+.content-2 .pic {
+    width:200px;
+    height:200px;
+    border: 1px solid #555;
+    position: relative;
+    /*background: url(../images/.jpg) no-repeat;*/
+    /*-webkit-background-size:200px 200px;*/
+    /*background-size:200px 200px;*/
+}
+.content-2 .pic .c{
+    width:50px;
+    height:50px;
+    position: absolute;
+    overflow: hidden;
+    /*background: url(./images/<%=titlePic%>.jpg);*/
+    /*-webkit-background-size:200px 200px;*/
+    /*background-size:200px 200px;*/
+}
+.content-2 .pic .c span{
+    position: absolute;
+}
+.content-2 .pic .c .top{
+    width:600px;
+    border: 1px dashed #ccc;
+    left:0;
+}
+.content-2 .pic .c .right{
+    height:600px;
+    border: 1px dashed #ccc;
+    right:0;
+    top:0;
+}
+.content-2 .pic .c .bottom{
+    width:600px;
+    border: 1px dashed #ccc;
+    bottom:0;
+    right:0;
+}
+.content-2 .pic .c .left{
+    height:600px;
+    border: 1px dashed #ccc;
+    bottom:0;
+}
+.content-2 .pic .black{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: black;
+    opacity:0.6;
+    top:0;
+    left:0;
+}

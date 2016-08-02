@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>安装无忧网</title>
+    <link rel="shortcut icon" href="images/logo.png" /> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+       <div class="back"></div>
+        <div class="head">
+        <div class="logo">
+            <h1>安装无忧网
+            </h1>
+          <!--   <span>让安装更简单 !</span> -->
+        </div>
+        <nav>
+            <ul>
+                <li class="cur"><a href="/">首页</a></li>
+                <li><a href="#">我是用户</a></li>
+                <li><a href="/login">我是工人</a></li>
+                <li><a href="#">品牌合作</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">区域查询</a></li>
+            </ul>
+        </nav>
+        <div class="session">
+            <%if(!login){%>
+            <button type="button" class="btn btn-primary btnL btns" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">注册</button>
+             <button type="button" class="btn btn-primarys btnR btns" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>
+       <div class="modal fade out" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="item iteme btns">
+         <h3 class="btns">注册</h3>
+         <span class="close btns">关闭</span>
+         <div class="cont btns">
+         <form id="form">
+         <ul class="btns">
+             <li><input type="text" name="phoneNumber" placeholder="请输入手机号" class="phoneNumber btns"><em class=""></em><span class="explain"></span></li>
+             <li><input type="password"  name="password" placeholder="设置密码" class="password btns" ><em class=""></em><span class="explain"></span></li>
+             <li> <input type="password" placeholder="重复密码" class="password1 btns"><em class=""></em><span class="explain"></span></li>
+             <li class="proving btns"><input class="btns" type="text" placeholder="验证短信"><input type="button" class="btns" value="发送验证码"></li>
+             <li><input class="btns" type="checkbox">我已经详细阅读<a class="btns" href="#">《安装协议》</a></li>
+             <li class="logine delete">注册</li>
+             <li class="registers delete">我已经注册，<a  class="btns sess" href="#">立即登录</a></li>
+         </ul> 
+    </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- 登录页面 -->
+       <div class="modal fade  DL" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="items item btns">
+         <h3 class="btns">登录</h3>
+         <span class="close btns">关闭</span>
+         <div class="cont btns">
+         <form id="forms">
+         <ul class="btns">
+             <li class="messages delete"><a href="">短信快捷登录</a><span></span></li>
+             <li><input type="text" name="phoneNumber" placeholder="请输入手机号" class="phoneNumber btns"></li>
+             <li><input type="password" name="password" placeholder="请输入密码" class="password btns" ></li>
+            <!--  <li><input class="btns" type="checkbox">我已经详细阅读<a class="btns" href="#">《安装协议》</a></li> -->
+             <li class="logine delete">登录</li>
+             <li class="registers">还没有账号？<a  class="btns boot" href="#">立即注册</a></li>
+         </ul> 
+    </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- 登录页面结尾 -->
+            <%}else{%>
+            <span class="names"><a href=""><%=name%></a>退出登录</span>
+            <span class="titlePic"><img src="./images/<%=titlePic%>.jpg" alt=""></span>
+            <%}%>
+        </div>
+        </div>
+    </header>
+    <div class="content">
+         <div class="unit">
+             <ul>
+                 <li><img src="images/bg1.jpg" alt=""></li>
+                 <li><img src="images/bg2.jpg" alt=""></li>
+                 <li><img src="images/bg3.jpg" alt=""></li>
+                 <li><img src="images/bg4.jpg" alt=""></li>
+             </ul>
+         </div>
+         <div class="Btn">
+           <div class="slider"></div>
+         </div>
+    </div>
+<script type="text/javascript" src="/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/underscore-min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type= "text/javascript" src="/js/check.js"></script>
+</body>
+</html>
